@@ -1,0 +1,29 @@
+body{
+    background-color: lightblue;
+}
+.swiper-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 20px;
+}
+.swiper-button-next{
+    /* position: absolute;
+    bottom: 0px; */
+    padding-left: 300px;
+}
+
+.swiper-button-prev{
+    padding-right: 300px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Creating a navigation bar using the 
+		.navbar class of bootstrap -->
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+                <path
+                    d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72l-.25-1Z" />
+            </svg></a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    About
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Contacts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Login
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="bg-warning text-white text-center py-2">
+        <h1 class="display-6">SD Bank</h1>
+    </header>
+
+    <!-- Product Section -->
+    <section id="products" class="container my-5">
+        <h2 class="text-center mb-5">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/Free-Savings-Account.jpg" style="height: 200px;" class="card-img-top"
+                        alt="Savings">
+                    <div class="card-body">
+                        <h5 class="card-title user-select-all">Savings Account</h5>
+                        <p class="card-text"><a href="#" data-toggle="popover"
+                                title="A savings account is a type of bank account designed for saving money that you don't plan to spend right away. Like a checking account, you can make withdrawals and access the money as needed.">Toggle
+                                popover</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/checking-account.png" style="height: 200px;" class="card-img-top" alt="Checking">
+                    <div class="card-body">
+                        <h5 class="card-title user-select-all">Checking Account</h5>
+                        <p class="card-text"><a href="#" data-toggle="popover"
+                                title="Checking account: A checking account offers easy access to your money for your daily transactional needs and helps keep your cash secure. Customers can typically use a debit card or checks to make purchases or pay bills.">Toggle
+                                popover</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/business.webp" style="height: 200px;" class="card-img-top" alt="Business">
+                    <div class="card-body">
+                        <h5 class="card-title user-select-all">Business Account</h5>
+                        <p class="card-text"><a href="#" data-toggle="popover"
+                                title="A business bank account is a bank account that's used only for business transactions rather than personal finances. It can be opened in the name of the business, allowing payments to be made and received using the business's name. Business bank accounts operate in a similar manner to personal bank accounts.">Toggle
+                                popover</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Home Loan Information -->
+            <div class="swiper-slide">
+                <h2>Home Loan Information</h2>
+                <div>
+                    <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+
+            <!-- Car Loan Information -->
+            <div class="swiper-slide">
+                <h2>Car Loan Information</h2>
+                <div>
+                    <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+
+        let mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 'vertical' for vertical slider
+            loop: true, // Loop the slides
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+</body>
+
+</html>
